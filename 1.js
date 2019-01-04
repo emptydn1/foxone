@@ -104,7 +104,7 @@ $(function(){
         window.setTimeout(function() {
             $('body').removeClass('preloading');
             $(".preload-container").addClass("delete");
-        }, 5000);
+        }, 2000);
     });
 
     chay('.khungSession .ss5', 'activeSs5');
