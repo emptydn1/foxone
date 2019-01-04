@@ -50,9 +50,6 @@ var slides = document.getElementsByClassName('slideHeader');
 // var tt2 = 1;
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function(){
-//         absc = () => { (tt2 == 1)? clearInterval(time) : setInterval(function(){ autoSlide(); }, 2000);}
-//         absc();
-//         tt2 = (tt2 == 1)? tt2 == 2 : tt2 == 1;
         clearInterval(time);
         remove(buttons, 'activeButton');
         this.classList.add('activeButton');
