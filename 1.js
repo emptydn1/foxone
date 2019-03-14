@@ -86,6 +86,15 @@ var ll = document.querySelector('.preload-container');
 var title = document.querySelectorAll('.ss4 .title ul li');
 
 $(function(){
+  
+    $hu = $('.content ul').isotope({
+        itemSelector : 'li'
+    })
+        
+    $hu.imagesLoaded().progress( function() {
+        $hu.isotope('layout');
+    });
+  
     $('.content ul').isotope({
         itemSelector : 'li'
     })
